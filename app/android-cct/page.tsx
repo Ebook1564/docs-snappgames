@@ -76,7 +76,7 @@ export default function AndroidIntegration() {
           </p>
           <div className="ml-11">
             <CodeBlock
-              code={`dependencies {\n    // Chrome Custom Tabs\n    implementation 'androidx.browser:browser:1.9.0'\n    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'\n\n    // Android WebView Support\n    implementation("androidx.webkit:webkit:1.8.0")\n}`}
+              code={`dependencies {\n  // Android WebView Support\n    implementation("androidx.webkit:webkit:1.8.0")\n}`}
               language="gradle"
               filename="app/build.gradle"
             />

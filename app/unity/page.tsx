@@ -15,7 +15,7 @@ export default function UnityIntegration() {
             Unity WebView <span className="text-blue-600">Integration Guide</span>
           </h1>
           <p className="text-xl text-zinc-900 dark:text-zinc-400 leading-9 max-w-4xl">
-            This guide provides comprehensive step-by-step instructions to integrate a WebView component into any Unity game project. 
+            This guide provides comprehensive step-by-step instructions to integrate a WebView component into any Unity game project.
             The WebView allows you to display web content directly within your Unity application.
           </p>
         </section>
@@ -189,12 +189,12 @@ export default function UnityIntegration() {
                   Implementation Script
                 </h3>
                 <p className="text-zinc-950 dark:text-zinc-400 text-sm leading-relaxed mb-4">
-                  You can use the following C# snippet as a reference for your <code className="text-blue-500 font-bold">GameController</code> or 
+                  You can use the following C# snippet as a reference for your <code className="text-blue-500 font-bold">GameController</code> or
                   <code className="text-blue-500 font-bold">WebViewManager</code> script. This handles the click event and launches the Unique Link.
                 </p>
-                <CodeBlock 
-                  code={`using UnityEngine;\nusing UnityEngine.UI;\n\npublic class SnappGamesHandler : MonoBehaviour\n{\n    public Button snappgamesButton;\n    private string gameUrl = "https://www.snappgames.com/?id=44";\n\n    void Start()\n    {\n        if (snappgamesButton != null)\n        {\n            snappgamesButton.onClick.AddListener(OpenWebView);\n        }\n    }\n\n    void OpenWebView()\n    {\n        // Trigger your WebView component here\n        // Example: WebView.Open(gameUrl);\n        Debug.Log("Launching SnappGames: " + gameUrl);\n        Application.OpenURL(gameUrl); // Fallback to browser if needed\n    }\n}`} 
-                  language="csharp" 
+                <CodeBlock
+                  code={`using UnityEngine;\nusing UnityEngine.UI;\n\npublic class SnappGamesHandler : MonoBehaviour\n{\n    public Button snappgamesButton;\n    private string gameUrl = "https://www.snappgames.com/?id=44";\n\n    void Start()\n    {\n        if (snappgamesButton != null)\n        {\n            snappgamesButton.onClick.AddListener(OpenWebView);\n        }\n    }\n\n    void OpenWebView()\n    {\n        // Trigger your WebView component here\n        // Example: WebView.Open(gameUrl);\n        Debug.Log("Launching SnappGames: " + gameUrl);\n        Application.OpenURL(gameUrl); // Fallback to browser if needed\n    }\n}`}
+                  language="csharp"
                   filename="SnappGamesHandler.cs"
                 />
               </div>
@@ -217,12 +217,12 @@ export default function UnityIntegration() {
             </svg>
             Android (CCT)
           </Link>
-          <Link href="/api/auth" className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors font-bold text-right">
+          {/* <Link href="/api/auth" className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors font-bold text-right">
             Authentication Reference
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </DocsLayout>
