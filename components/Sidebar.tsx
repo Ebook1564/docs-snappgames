@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { 
-  Home, 
-  Rocket, 
-  BookOpen, 
-  Globe, 
-  Smartphone, 
-  Box, 
+import {
+  Home,
+  Rocket,
+  BookOpen,
+  Globe,
+  Smartphone,
+  Box,
   LayoutGrid,
   Sparkles
 } from "lucide-react";
@@ -36,7 +36,7 @@ const navigation: NavGroup[] = [
   {
     title: "Integration Guide",
     links: [
-      { name: "Web Integration", href: "/web", icon: Globe },
+      // { name: "Web Integration", href: "/web", icon: Globe },
       { name: "Android Integration", href: "/android-cct", icon: Smartphone },
       { name: "Unity Plugin", href: "/unity", icon: Box },
     ],
@@ -68,16 +68,15 @@ export default function Sidebar({ className }: { className?: string }) {
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className={`group flex items-center gap-3 px-3 py-2 rounded-xl transition-all duration-300 ${
-                          isActive
-                            ? "bg-blue-600/10 text-blue-600 dark:text-blue-400 font-bold shadow-sm"
-                            : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-white/5 hover:text-zinc-900 dark:hover:text-zinc-100"
-                        }`}
+                        className={`group flex items-center gap-3 px-3 py-2 rounded-xl transition-all duration-300 ${isActive
+                          ? "bg-blue-600/10 text-blue-600 dark:text-blue-400 font-bold shadow-sm"
+                          : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-white/5 hover:text-zinc-900 dark:hover:text-zinc-100"
+                          }`}
                       >
                         <link.icon className={`w-4 h-4 transition-transform duration-300 ${isActive ? "scale-110" : "group-hover:scale-110"}`} />
                         <span className="text-sm tracking-tight">{link.name}</span>
                         {isActive && (
-                           <div className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 shadow-[0_0_8px_rgba(37,99,235,0.5)]" />
+                          <div className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 shadow-[0_0_8px_rgba(37,99,235,0.5)]" />
                         )}
                       </Link>
                     </li>

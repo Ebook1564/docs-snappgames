@@ -99,11 +99,11 @@ export default function Showcase() {
             <div className="absolute top-20 right-0 w-64 h-64 bg-purple-500/5 rounded-full blur-[100px] pointer-events-none dark:opacity-30" />
             
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-600 dark:text-pink-400 mb-6 font-bold text-xs uppercase tracking-widest shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 mb-6 font-bold text-xs uppercase tracking-widest shadow-sm">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Live Showcase</span>
               </div>
-              <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight" style={{ fontFamily: 'var(--font-brand)' }}>
+              <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter leading-tight text-zinc-900 dark:text-white">
                 Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00cc] to-[#3333ff]">Games</span> 🎮
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
@@ -121,7 +121,7 @@ export default function Showcase() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-bold transition-all flex items-center gap-2 ${
                   activeCategory === cat 
-                  ? 'bg-gradient-to-r from-[#ff00cc] to-[#3333ff] text-white shadow-lg shadow-pink-600/20 scale-105' 
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20 scale-105' 
                   : 'bg-secondary text-secondary-foreground hover:bg-border'
                 }`}
               >
@@ -177,7 +177,7 @@ export default function Showcase() {
                         {categoryEmojis[game.category]} {game.category}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-black mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors tracking-tighter">
                       {game.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-6 line-clamp-2 leading-relaxed h-10">
@@ -211,14 +211,14 @@ export default function Showcase() {
           </div>
 
           {/* CTA Section */}
-          <div id="integration" className="mt-24 p-8 lg:p-12 rounded-[3rem] bg-gradient-to-br from-pink-600/[0.03] to-indigo-600/[0.03] border border-border text-center relative overflow-hidden group scroll-mt-24">
-            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-pink-500/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000" />
+          <div id="integration" className="mt-24 p-8 lg:p-12 rounded-[3rem] bg-gradient-to-br from-blue-600/[0.03] to-indigo-600/[0.03] border border-border text-center relative overflow-hidden group scroll-mt-24">
+            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000" />
             
             <div className="relative z-10">
-              <div className="w-16 h-16 bg-pink-600/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-pink-600/20">
-                <LayoutGrid className="w-8 h-8 text-[#ff00cc]" />
+              <div className="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-blue-600/20">
+                <LayoutGrid className="w-8 h-8 text-blue-600" />
               </div>
-              <h2 className="text-3xl font-black mb-4 tracking-tight" style={{ fontFamily: 'var(--font-brand)' }}>
+              <h2 className="text-3xl font-black mb-4 tracking-tighter text-zinc-900 dark:text-white">
                 Want to Embed These Games? 🚀
               </h2>
               <p className="text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
@@ -226,15 +226,15 @@ export default function Showcase() {
                 Whether you're on Web, Android, or Unity, we've got you covered.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-6">
-                <a href="/web" className="group flex items-center gap-2 font-bold text-[#ff00cc] dark:text-[#ff33ff] hover:gap-3 transition-all">
+                <a href="/web" className="group flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all">
                   Web Guide <Zap className="w-4 h-4 fill-current" />
                 </a>
                 <div className="w-1.5 h-1.5 rounded-full bg-border" />
-                <a href="/android-cct" className="group flex items-center gap-2 font-bold text-[#ff00cc] dark:text-[#ff33ff] hover:gap-3 transition-all">
+                <a href="/android-cct" className="group flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all">
                   Android CCT <Zap className="w-4 h-4 fill-current" />
                 </a>
                 <div className="w-1.5 h-1.5 rounded-full bg-border" />
-                <a href="/unity" className="group flex items-center gap-2 font-bold text-[#ff00cc] dark:text-[#ff33ff] hover:gap-3 transition-all">
+                <a href="/unity" className="group flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all">
                   Unity Plugin <Zap className="w-4 h-4 fill-current" />
                 </a>
               </div>
@@ -250,20 +250,20 @@ export default function Showcase() {
             </h3>
             <ul className="space-y-4 text-sm font-medium">
               <li>
-                <a href="#overview" className="text-zinc-600 dark:text-zinc-400 hover:text-[#ff00cc] dark:hover:text-[#ff33ff] transition-colors flex items-center gap-2 group">
-                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-[#ff00cc] transition-colors" />
+                <a href="#overview" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2 group">
+                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-blue-600 transition-colors" />
                   Overview
                 </a>
               </li>
               <li>
-                <a href="#categories" className="text-zinc-600 dark:text-zinc-400 hover:text-[#ff00cc] dark:hover:text-[#ff33ff] transition-colors flex items-center gap-2 group">
-                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-[#ff00cc] transition-colors" />
+                <a href="#categories" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2 group">
+                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-blue-600 transition-colors" />
                   Game Categories
                 </a>
               </li>
               <li>
-                <a href="#integration" className="text-zinc-600 dark:text-zinc-400 hover:text-[#ff00cc] dark:hover:text-[#ff33ff] transition-colors flex items-center gap-2 group">
-                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-[#ff00cc] transition-colors" />
+                <a href="#integration" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2 group">
+                  <div className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-blue-600 transition-colors" />
                   Integration Guides
                 </a>
               </li>

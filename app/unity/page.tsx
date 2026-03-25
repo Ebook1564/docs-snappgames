@@ -11,8 +11,8 @@ export default function UnityIntegration() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-semibold mb-6">
             🎮 Unity Integration
           </div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-5xl mb-6">
-            Unity WebView <span className="text-blue-600">Integration Guide</span>
+          <h1 className="text-3xl font-black tracking-tighter text-zinc-900 dark:text-white sm:text-5xl mb-6">
+            Unity WebView <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00cc] to-[#3333ff]">Integration Guide</span>
           </h1>
           <p className="text-xl text-zinc-900 dark:text-zinc-400 leading-9 max-w-4xl">
             This guide provides comprehensive step-by-step instructions to integrate a WebView component into any Unity game project.
@@ -27,7 +27,7 @@ export default function UnityIntegration() {
               <path d="M12 2L2 12l10 10 10-10L12 2zM5.41 12L12 5.41 18.59 12 12 18.59 5.41 12z" />
             </svg>
           </div>
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">Prerequisites</h2>
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 tracking-tighter">Prerequisites</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Unity Editor (2019.4 or later recommended)",
@@ -50,7 +50,7 @@ export default function UnityIntegration() {
         <div className="space-y-16">
           {/* Step 1 */}
           <section id="step-1" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-4">
+            <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-4 tracking-tighter">
               <span className="flex-none w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg font-bold shadow-lg shadow-blue-500/20">1</span>
               Open Your Unity Project
             </h2>
@@ -66,7 +66,7 @@ export default function UnityIntegration() {
 
           {/* Step 2 */}
           <section id="step-2" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-4">
+            <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-4 tracking-tighter">
               <span className="flex-none w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg font-bold shadow-lg shadow-blue-500/20">2</span>
               Load the Main Scene
             </h2>
@@ -88,7 +88,7 @@ export default function UnityIntegration() {
 
           {/* Step 3 */}
           <section id="step-3" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-4">
+            <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-4 tracking-tighter">
               <span className="flex-none w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg font-bold shadow-lg shadow-blue-500/20">3</span>
               Create the Website Button
             </h2>
@@ -118,7 +118,7 @@ export default function UnityIntegration() {
 
           {/* Step 4 */}
           <section id="step-4" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-4">
+            <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-4 tracking-tighter">
               <span className="flex-none w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg font-bold shadow-lg shadow-blue-500/20">4</span>
               Import WebView Custom Package
             </h2>
@@ -142,13 +142,13 @@ export default function UnityIntegration() {
 
           {/* Step 5 */}
           <section id="step-5" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-4">
+            <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-4 tracking-tighter">
               <span className="flex-none w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg font-bold shadow-lg shadow-blue-500/20">5</span>
               Setup WebView Script and Game Controller
             </h2>
             <div className="ml-14 space-y-12">
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Import WebView Script Folder</h3>
+                <h3 className="text-xl font-black text-zinc-900 dark:text-white tracking-tighter">Import WebView Script Folder</h3>
                 <ul className="list-disc list-inside space-y-2 text-zinc-800 dark:text-zinc-400 font-medium ml-4">
                   <li>Locate the WebView script folder (provided separately).</li>
                   <li>Drag and drop the entire WebView script folder into the Assets folder.</li>
@@ -157,7 +157,7 @@ export default function UnityIntegration() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Create GameControllerWindow GameObject</h3>
+                <h3 className="text-xl font-black text-zinc-900 dark:text-white tracking-tighter">Create GameControllerWindow GameObject</h3>
                 <ul className="list-disc list-inside space-y-2 text-zinc-800 dark:text-zinc-400 font-medium ml-4">
                   <li>In the Hierarchy window, right-click on the Canvas.</li>
                   <li>Select Create Empty.</li>
@@ -166,7 +166,7 @@ export default function UnityIntegration() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Attach Script to GameControllerWindow</h3>
+                <h3 className="text-xl font-black text-zinc-900 dark:text-white tracking-tighter">Attach Script to GameControllerWindow</h3>
                 <ul className="list-disc list-inside space-y-2 text-zinc-800 dark:text-zinc-400 font-medium ml-4">
                   <li>Select <code className="text-blue-600 font-bold">[GameControllerWindow]</code> in the Hierarchy.</li>
                   <li>From the Project window, locate the WebView script file.</li>
@@ -175,7 +175,7 @@ export default function UnityIntegration() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Configure Banner Button Reference</h3>
+                <h3 className="text-xl font-black text-zinc-900 dark:text-white tracking-tighter">Configure Banner Button Reference</h3>
                 <ul className="list-disc list-inside space-y-2 text-zinc-800 dark:text-zinc-400 font-medium ml-4">
                   <li>Look at the WebView script component in the Inspector.</li>
                   <li>Locate the <strong>Banner Button</strong> field.</li>
@@ -184,7 +184,7 @@ export default function UnityIntegration() {
               </div>
 
               <div className="space-y-6 pt-8 border-t border-zinc-100 dark:border-zinc-800">
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white flex items-center gap-2">
+                <h3 className="text-xl font-black text-zinc-900 dark:text-white flex items-center gap-2 tracking-tighter">
                   <span className="w-2 h-2 rounded-full bg-blue-600"></span>
                   Implementation Script
                 </h3>

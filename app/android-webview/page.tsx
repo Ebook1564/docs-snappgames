@@ -11,7 +11,7 @@ export default function AndroidWebView() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-semibold mb-6">
             🤖 Android Integration
           </div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-5xl mb-6">
+          <h1 className="text-3xl font-black tracking-tighter text-zinc-900 dark:text-white sm:text-5xl mb-6">
             Add Unique Link using <span className="text-blue-600">Android WebView</span>
           </h1>
           <p className="text-xl text-zinc-950 dark:text-zinc-400 leading-9 max-w-4xl">
@@ -21,14 +21,14 @@ export default function AndroidWebView() {
 
         {/* Implementation Steps */}
         <section id="implementing-webview" className="scroll-mt-24">
-          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-8">
+          <h2 className="text-3xl font-black text-zinc-900 dark:text-white mb-8 tracking-tighter">
             Implementing WebView steps
           </h2>
 
           <div className="space-y-16">
             {/* Step 1 */}
             <div id="step-1" className="scroll-mt-24">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-black text-zinc-900 dark:text-white mb-4 flex items-center gap-3 tracking-tighter">
                 <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">1</span>
                 Update the build.gradle file
               </h3>
@@ -47,7 +47,7 @@ export default function AndroidWebView() {
 
             {/* Step 2 */}
             <div id="step-2" className="scroll-mt-24">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-black text-zinc-900 dark:text-white mb-4 flex items-center gap-3 tracking-tighter">
                 <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">2</span>
                 Create GameWebViewActivity
               </h3>
@@ -59,7 +59,7 @@ export default function AndroidWebView() {
 
             {/* Step 3 */}
             <div id="step-3" className="scroll-mt-24">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-black text-zinc-900 dark:text-white mb-4 flex items-center gap-3 tracking-tighter">
                 <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">3</span>
                 Add the source code
               </h3>

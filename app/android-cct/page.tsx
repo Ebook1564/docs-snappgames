@@ -11,8 +11,8 @@ export default function AndroidIntegration() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-semibold mb-6">
             🤖 Android Integration
           </div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-5xl mb-6">
-            Android <span className="text-blue-600">Integration</span>
+          <h1 className="text-3xl font-black tracking-tighter text-zinc-900 dark:text-white sm:text-5xl mb-6">
+            Android <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00cc] to-[#3333ff]">Integration</span>
           </h1>
           <p className="text-xl text-zinc-900 dark:text-zinc-400 leading-9 max-w-4xl">
             Integrating SnappGames into your Android application is straightforward. We provide two robust methods to launch your Unique Links: Chrome Custom Tabs (CCT) and a native WebView implementation.
@@ -21,12 +21,12 @@ export default function AndroidIntegration() {
 
         {/* Comparison Section */}
         <section id="comparison" className="scroll-mt-24 p-8 rounded-3xl bg-zinc-50/50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 tracking-tighter">
             Choosing the Right Method
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-bold text-emerald-600 flex items-center gap-2">
+              <h3 className="text-lg font-black text-emerald-600 flex items-center gap-2 tracking-tighter">
                 Chrome Custom Tabs (CCT)
               </h3>
               <ul className="list-disc list-inside text-sm text-zinc-900 dark:text-zinc-400 space-y-2">
@@ -37,7 +37,7 @@ export default function AndroidIntegration() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-bold text-blue-600 flex items-center gap-2">
+              <h3 className="text-lg font-black text-blue-600 flex items-center gap-2 tracking-tighter">
                 Android WebView
               </h3>
               <ul className="list-disc list-inside text-sm text-zinc-900 dark:text-zinc-400 space-y-2">
@@ -52,7 +52,7 @@ export default function AndroidIntegration() {
 
         {/* Prerequisites */}
         <section id="prerequisites" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 tracking-tighter">
             Prerequisites
           </h2>
           <p className="text-zinc-900 dark:text-zinc-400 mb-6 leading-relaxed">
@@ -67,7 +67,7 @@ export default function AndroidIntegration() {
 
         {/* Step 1: Dependencies */}
         <section id="step-1" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-3">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-3 tracking-tighter">
             <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">1</span>
             Update the build.gradle file
           </h2>
@@ -85,7 +85,7 @@ export default function AndroidIntegration() {
 
         {/* Method 1: CCT */}
         <section id="method-cct" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-3">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-3 tracking-tighter">
             <span className="flex-none w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-emerald-500/20">2A</span>
             Option 1: Chrome Custom Tabs (Recommended)
           </h2>
@@ -103,7 +103,7 @@ export default function AndroidIntegration() {
 
         {/* Method 2: WebView */}
         <section id="method-webview" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-3">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-3 tracking-tighter">
             <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">2B</span>
             Option 2: Android WebView Integration
           </h2>
@@ -112,13 +112,13 @@ export default function AndroidIntegration() {
               For a more customized experience, you can host the game directly within an Activity using a Managed WebView.
             </p>
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-2">1. Create GameWebViewActivity</h4>
+              <h4 className="font-black text-zinc-900 dark:text-white mb-2 tracking-tighter">1. Create GameWebViewActivity</h4>
               <p className="text-sm text-zinc-800 dark:text-zinc-400 mb-4">
                 In Android Studio, go to <strong>app &rarr; src &rarr; main &rarr; java &rarr; your.package</strong>. Right-click and select <strong>New &rarr; Kotlin Class/File</strong>, and name it <code className="text-blue-600 font-bold">GameWebViewActivity</code>.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-2">2. Implementation details</h4>
+              <h4 className="font-black text-zinc-900 dark:text-white mb-2 tracking-tighter">2. Implementation details</h4>
               <CodeBlock
                 code={`import android.graphics.Color\nimport android.os.Build\nimport android.os.Bundle\nimport android.view.View\nimport android.webkit.CookieManager\nimport android.webkit.WebSettings\nimport android.webkit.WebView\nimport android.webkit.WebViewClient\nimport androidx.appcompat.app.AppCompatActivity\n\nclass GameWebViewActivity : AppCompatActivity() {\n    private lateinit var myWebView: WebView\n\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_game_webview)\n        myWebView = findViewById(R.id.myWebView)\n\n        configureWebViewSettings()\n\n        // Retrieve game URL from Intent or use default\n        val gameUrl = intent.getStringExtra("game_url") ?: "https://snappgames.com/?id=42"\n        myWebView.loadUrl(gameUrl)\n    }\n\n    private fun configureWebViewSettings() {\n        myWebView.settings.apply {\n            javaScriptEnabled = true\n            domStorageEnabled = true\n            mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW\n            setSupportZoom(false)\n            builtInZoomControls = false\n            displayZoomControls = false\n        }\n\n        myWebView.apply {\n            setSoundEffectsEnabled(true)\n            scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY\n            setBackgroundColor(Color.BLACK)\n            webViewClient = WebViewClient()\n        }\n\n        // Ensure cookies are handled for session persistence\n        CookieManager.getInstance().apply {\n            setAcceptCookie(true)\n            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {\n                setAcceptThirdPartyCookies(myWebView, true)\n            }\n        }\n    }\n}`}
                 language="kotlin"
@@ -130,7 +130,7 @@ export default function AndroidIntegration() {
 
         {/* Step 3: XML Changes */}
         <section id="step-3" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6 flex items-center gap-3">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 flex items-center gap-3 tracking-tighter">
             <span className="flex-none w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">3</span>
             Make the relevant XML changes
           </h2>
@@ -149,12 +149,12 @@ export default function AndroidIntegration() {
 
         {/* Best Practices & Handling Back Button */}
         <section id="best-practices" className="scroll-mt-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">
+          <h2 className="text-2xl font-black text-zinc-900 dark:text-white mb-6 tracking-tighter">
             Best Practices
           </h2>
           <div className="space-y-8 ml-11">
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-2">Handling the Back Button (WebView)</h4>
+              <h4 className="font-black text-zinc-900 dark:text-white mb-2 tracking-tighter">Handling the Back Button (WebView)</h4>
               <p className="text-sm text-zinc-800 dark:text-zinc-400 mb-4 leading-relaxed">
                 When using a WebView, you should handle the device&apos;s back button to ensure users can navigate back through the game&apos;s history instead of immediately closing the Activity:
               </p>
@@ -169,7 +169,7 @@ export default function AndroidIntegration() {
 
         {/* FAQs */}
         <section id="faqs" className="scroll-mt-24 pb-20">
-          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-8">
+          <h2 className="text-3xl font-black text-zinc-900 dark:text-white mb-8 tracking-tighter">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
@@ -188,7 +188,7 @@ export default function AndroidIntegration() {
               }
             ].map((faq, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-blue-500 transition-colors group shadow-sm">
-                <h4 className="font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-blue-600 transition-colors tracking-tight">{faq.q}</h4>
+                <h4 className="font-black text-zinc-900 dark:text-white mb-2 group-hover:text-blue-600 transition-colors tracking-tighter">{faq.q}</h4>
                 <p className="text-sm text-zinc-800 dark:text-zinc-400 leading-relaxed">{faq.a}</p>
               </div>
             ))}

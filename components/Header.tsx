@@ -17,14 +17,14 @@ export default function Header() {
           </button>
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform">
-              <img 
-                src="https://www.snappgames.com/_next/image?url=%2Fs-logo.png&w=1920&q=75" 
-                alt="SnappGames Logo" 
+              <img
+                src="https://www.snappgames.com/_next/image?url=%2Fs-logo.png&w=1920&q=75"
+                alt="SnappGames Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white" style={{ fontFamily: 'var(--font-brand)' }}>
-              Snapp<span className="text-blue-600">Games</span>
+            <span className="text-2xl font-black tracking-tighter text-zinc-900 dark:text-white">
+              Snapp<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00cc] to-[#3333ff]">Games</span>
             </span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-zinc-950 dark:text-zinc-400">
