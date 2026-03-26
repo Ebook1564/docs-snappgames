@@ -9,10 +9,10 @@ export default function DocsLayout({
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-1 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 mt-16">
-        <div className="flex flex-row gap-16 xl:gap-24">
+      <div className="flex-1 w-full max-w-[1600px] mx-auto mt-16">
+        <div className="flex flex-row">
           <Sidebar />
-          <main className="flex-1 min-w-0 py-12">
+          <main className="flex-1 min-w-0 py-12 px-8 lg:px-12">
             <div className="mx-auto xl:mx-0">
               {children}
             </div>

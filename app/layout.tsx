@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "SnappGames Integration Guide",
   description: "Bring high-quality, instant-play games to your platform.",
   icons: {
-    icon: '/s-logo.png',
+    icon: '/favicon.ico',
   },
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full selection:bg-blue-100 dark:selection:bg-blue-900/30">
+      <body className="max-h-full selection:bg-blue-100 dark:selection:bg-blue-900/30">
         <ThemeProvider>
           {children}
           <ThemeSwitcher />

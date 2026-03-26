@@ -90,7 +90,7 @@ export default function Showcase() {
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Header />
       <div className="flex pt-16">
-        <Sidebar className="hidden lg:block w-72 h-[calc(100vh-4rem)] border-r border-border sticky top-16" />
+        <Sidebar />
         
         <main className="flex-1 p-6 lg:p-10 max-w-5xl mx-auto overflow-x-hidden">
           {/* Hero Section */}

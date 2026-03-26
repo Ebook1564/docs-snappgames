@@ -4,17 +4,26 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header
-      className="fixed top-0 z-[100] w-full glass border-b shadow-sm transition-all duration-300"
-    >
+    <header className="fixed top-0 z-[100] w-full glass border-b shadow-sm transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-4 sm:px-6 lg:px-12">
         <div className="flex items-center gap-4 lg:gap-8">
           <button className="lg:hidden p-2 -ml-2 text-zinc-800 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-md">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+          
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform">
               <img
@@ -23,16 +32,18 @@ export default function Header() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-2xl font-black tracking-tighter text-zinc-900 dark:text-white">
+            <span className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">
               Snapp<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff00cc] to-[#3333ff]">Games</span>
             </span>
           </Link>
+
           <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-zinc-950 dark:text-zinc-400">
             <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Docs</Link>
             {/* <Link href="/api/auth" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">API Reference</Link> */}
             <Link href="/showcase" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Showcase</Link>
           </nav>
         </div>
+
         <div className="flex items-center gap-4">
           <div className="relative hidden sm:block">
             <input
@@ -44,7 +55,6 @@ export default function Header() {
               ⌘ K
             </kbd>
           </div>
-
         </div>
       </div>
     </header>

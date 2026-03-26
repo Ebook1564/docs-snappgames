@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import {
   Home,
   Rocket,
@@ -10,7 +11,6 @@ import {
   Smartphone,
   Box,
   LayoutGrid,
-  Sparkles
 } from "lucide-react";
 
 interface NavLink {
@@ -53,9 +53,9 @@ export default function Sidebar({ className }: { className?: string }) {
   const pathname = usePathname();
 
   return (
-    <div className={`hidden lg:block lg:w-72 lg:flex-none ${className || ""}`}>
-      <nav className="sticky top-24 h-[calc(100vh-6rem)] overflow-y-auto px-8 pb-8 scrollbar-thin scrollbar-thumb-zinc-200 dark:scrollbar-thumb-zinc-800">
-        <ul className="space-y-10">
+    <div className={`hidden lg:block lg:w-72 lg:flex-none border-r border-zinc-200/50 dark:border-zinc-800/50 ${className || ""}`}>
+      <nav className="sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto pt-8 pb-8 scrollbar-thin scrollbar-thumb-zinc-200 dark:scrollbar-thumb-zinc-800">
+        <ul className="space-y-10 px-6">
           {navigation.map((group) => (
             <li key={group.title}>
               <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-6 ml-1">
