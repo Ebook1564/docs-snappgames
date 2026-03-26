@@ -53,6 +53,7 @@ export default function Showcase() {
   const [games, setGames] = useState<Game[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('All');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     async function fetchGames() {
@@ -88,9 +89,15 @@ export default function Showcase() {
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      <Header />
+      <Header 
+        isMobileMenuOpen={isMobileMenuOpen} 
+        onToggleMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+      />
       <div className="flex pt-16">
-        <Sidebar />
+        <Sidebar 
+          isOpen={isMobileMenuOpen} 
+          onClose={() => setIsMobileMenuOpen(false)} 
+        />
         
         <main className="flex-1 p-6 lg:p-10 max-w-5xl mx-auto overflow-x-hidden">
           {/* Hero Section */}

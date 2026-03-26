@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
-export default function Header() {
+export default function Header({ 
+  isMobileMenuOpen, 
+  onToggleMenu 
+}: { 
+  isMobileMenuOpen?: boolean; 
+  onToggleMenu?: () => void; 
+}) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,12 +25,7 @@ export default function Header() {
     <header className="fixed top-0 z-[100] w-full glass border-b shadow-sm transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-4 sm:px-6 lg:px-12">
         <div className="flex items-center gap-4 lg:gap-8">
-          <button className="lg:hidden p-2 -ml-2 text-zinc-800 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-md">
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-          
+          {/* Logo Section */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform">
               <img
@@ -55,6 +57,18 @@ export default function Header() {
               ⌘ K
             </kbd>
           </div>
+
+          {/* Mobile Menu Button - Moved to Right */}
+          <button 
+            onClick={onToggleMenu}
+            className="lg:hidden p-2 text-zinc-800 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-md transition-colors"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
       </div>
     </header>
