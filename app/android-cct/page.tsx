@@ -94,7 +94,7 @@ export default function AndroidIntegration() {
           </p>
           <div className="ml-11">
             <CodeBlock
-              code={`CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();\nCustomTabsIntent customTabsIntent = builder.build();\n\nfindViewById(R.id.snappgamesButton).setOnClickListener(new View.OnClickListener() {\n    @Override\n    public void onClick(View view) {\n        // Launch your SnappGames Unique Link\n        String url = "https://www.snappgames.com/?id=44"; \n        customTabsIntent.launchUrl(MainActivity.this, Uri.parse(url));\n    }\n});`}
+              code={`CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();\nCustomTabsIntent customTabsIntent = builder.build();\n\nfindViewById(R.id.snappgamesButton).setOnClickListener(new View.OnClickListener() {\n    @Override\n    public void onClick(View view) {\n        // Launch your SnappGames Unique Link\n        String url = "https://snappgames.com/?id=44"; \n        customTabsIntent.launchUrl(MainActivity.this, Uri.parse(url));\n    }\n});`}
               language="java"
               filename="MainActivity.java"
             />

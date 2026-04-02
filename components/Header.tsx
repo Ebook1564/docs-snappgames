@@ -29,7 +29,7 @@ export default function Header({
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform">
               <img
-                src="https://www.snappgames.com/_next/image?url=%2Fs-logo.png&w=1920&q=75"
+                src="https://snappgames.com/_next/image?url=%2Fs-logo.png&w=1920&q=75"
                 alt="SnappGames Logo"
                 className="w-full h-full object-contain"
               />

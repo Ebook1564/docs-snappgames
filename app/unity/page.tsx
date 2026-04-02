@@ -193,7 +193,7 @@ export default function UnityIntegration() {
                   <code className="text-blue-500 font-bold">WebViewManager</code> script. This handles the click event and launches the Unique Link.
                 </p>
                 <CodeBlock
-                  code={`using UnityEngine;\nusing UnityEngine.UI;\n\npublic class SnappGamesHandler : MonoBehaviour\n{\n    public Button snappgamesButton;\n    private string gameUrl = "https://www.snappgames.com/?id=44";\n\n    void Start()\n    {\n        if (snappgamesButton != null)\n        {\n            snappgamesButton.onClick.AddListener(OpenWebView);\n        }\n    }\n\n    void OpenWebView()\n    {\n        // Trigger your WebView component here\n        // Example: WebView.Open(gameUrl);\n        Debug.Log("Launching SnappGames: " + gameUrl);\n        Application.OpenURL(gameUrl); // Fallback to browser if needed\n    }\n}`}
+                  code={`using UnityEngine;\nusing UnityEngine.UI;\n\npublic class SnappGamesHandler : MonoBehaviour\n{\n    public Button snappgamesButton;\n    private string gameUrl = "https://snappgames.com/?id=44";\n\n    void Start()\n    {\n        if (snappgamesButton != null)\n        {\n            snappgamesButton.onClick.AddListener(OpenWebView);\n        }\n    }\n\n    void OpenWebView()\n    {\n        // Trigger your WebView component here\n        // Example: WebView.Open(gameUrl);\n        Debug.Log("Launching SnappGames: " + gameUrl);\n        Application.OpenURL(gameUrl); // Fallback to browser if needed\n    }\n}`}
                   language="csharp"
                   filename="SnappGamesHandler.cs"
                 />

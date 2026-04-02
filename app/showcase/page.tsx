@@ -159,7 +159,7 @@ export default function Showcase() {
                       alt={game.title}
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'https://www.snappgames.com/favicon.ico';
+                        (e.target as HTMLImageElement).src = 'https://snappgames.com/favicon.ico';
                       }}
                     />
                     

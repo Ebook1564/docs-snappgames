@@ -75,7 +75,7 @@ export default function Home() {
             <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 shadow-sm">
               <h3 className="font-black text-zinc-900 dark:text-white mb-4 tracking-tighter">Sample Unique Link</h3>
               <CodeBlock
-                code="https://www.snappgames.com/?id=44"
+                code="https://snappgames.com/?id=44"
                 language="bash"
                 filename="Unique Link"
               />
